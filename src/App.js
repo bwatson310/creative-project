@@ -1,24 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
+import {Box, Tab, Tabs, Typography} from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Box height= "fit-content" bgcolor= "darkgraygrey" width= "fit-content">
+        <Box height= "fit-content" width = "fit-content" alignContent="center">
+            <Tabs>
+                <Tab  size= "medium" label="Clickable Link" href="#testId" component="a"  clickable sx={{
+                    color: "black",
+                    backgroundColor:"lightsteelblue",
+                    alignContent: "center",
+                    borderBlock: "medium",
+                    borderBlockColor: "black",
+                }}/>
+                <Tab size= "medium" label="Clickable Link" href="#testId" component="a"  clickable sx={{
+                    color: "black",
+                    backgroundColor: "orange",
+                    alignContent: "center",
+                }}/>
+                <Tab size= "medium" label="Clickable Link" href="#testId" component="a"  clickable sx={{
+                    color: "black",
+                    backgroundColor: "lightgreen",
+                    alignContent: "center",
+                }}/>
+                <Tab size= "medium" label="Clickable Link" href="#testId" component="a" clickable sx={{
+                    color: "black",
+                    backgroundColor: "red",
+                    alignContent: "center",
+                }}/>
+            </Tabs>
+        </Box>
+
+        <Box height= "fit-content" width="fit-content">
+        </Box>
+          <Box height= "fit-content">
+              <Typography variant="h1" paragraph>
+
+              </Typography>
+          </Box>
+
+          <Box bgcolor= "lightblue" width="1000" id="testId">
+
+              I am the tested link
+
+          </Box>
+      </Box>
+
+
   );
 }
 
