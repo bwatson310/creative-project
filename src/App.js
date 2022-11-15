@@ -1,5 +1,7 @@
 import './App.css';
 import {AppBar, Box, Card, Paper, Tab, Tabs, Typography} from "@mui/material";
+import "./communication-styles-quadrant.png";
+import {Image, View} from "react-native-web";
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
                         margin: "0.2rem",
                         fontSize: "1.5rem",
                     }}/>
-                    <Tab  size= "medium" label="The 2 quadrants" href="#The 2 Quadrants"  clickable sx={{
+                    <Tab  size= "medium" label="The 2 Axis" href="#The 2 Axis"  clickable sx={{
                         color: "black",
                         backgroundColor:"skyblue",
                         alignContent: "center",
@@ -28,7 +30,7 @@ function App() {
                         margin: "0.2rem",
                         fontSize: "1.5rem",
                     }}/>
-                    <Tab  size= "medium" label="Clickable Link" href="#testclick"  clickable sx={{
+                    <Tab  size= "medium" label="Consensual" href="#consensual"  clickable sx={{
                         color: "black",
                         backgroundColor:"lightblue",
                         alignContent: "center",
@@ -75,13 +77,13 @@ function App() {
                 </Tabs>
             </Card>
         </AppBar>
-        <Card sx={{backgroundColor: "lightgray", paddingY: "1rem", paddingTop: "6rem"}}>
-            <Typography textAlign="center" paddingTop="1rem" variant="h2" flex>
-                Family Communication Patterns
+        <Card sx={{backgroundColor: "lightgray", paddingY: "1rem", paddingTop: "8rem"}}>
+            <Typography textAlign="center" paddingTop="2rem" variant="h2" flex paddingBottom="2rem">
+                Introduction to Family Communication Patterns
             </Typography>
-            <Card variant="outlined" component={Paper} sx ={{
+            <Card id="introduction" variant="outlined" component={Paper} sx ={{
                 backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem"}}>
-                <Typography id="introduction" textAlign="center" paddingY="0.5rem" variant="h4">
+                <Typography textAlign="center" paddingY="0.5rem" variant="h4">
                     Introduction:
                 </Typography>
             </Card>
@@ -92,51 +94,44 @@ function App() {
                 familiar with or they may even become a completely different. The goal of this website is to help
                 understand the way that families communicate.
             </Typography>
-            <Typography variant="h6" paddingX="2rem" flex paragraph>
+            <Typography id="The 2 Axis" variant="h6" paddingX="2rem" flex paragraph paddingBottom= "2rem">
                 One of the ways that families communicate is through patterns. Through these patterns it is easy
                 to determine the nature of some of our family relationships. These different types of communication
-                can be divided into 2 different quadrants. These quadrants are "Concept Orientation" and
+                can be divided by 2 different axis. These two axis are "Concept Orientation" and
                 "Socio-Orientation". Using these two different quadrants, we are able to define four different
                 categories that help describe the patterns in which our families communicate.
             </Typography>
             <Card variant="outlined" component={Paper} sx ={{
                 backgroundColor: "skyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem"}}>
-                <Typography id="The 2 Quadrants" textAlign="center" paddingY="0.5rem" variant="h6">
-                    The Two Quadrants of Family Communication Patterns:
+                <Typography textAlign="center" paddingY="0.5rem" variant="h6">
+                    The Two Axis of Family Communication Patterns:
                 </Typography>
             </Card>
-            <Typography variant="h6" paddingX="2rem" flex paragraph>
-                One of the ways that families communicate is through patterns. Through these patterns it is easy
-                to determine the nature of some of our family relationships. These different types of communication
-                can be divided into 2 different quadrants. These quadrants are "Concept Orientation" and
-                "Socio-Orientation". Using these two different quadrants, we are able to define four different
-                categories that help describe the patterns in which our families communicate.
+            <Typography variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
+                The two axis of "Concept Orientation" and "Socio-Orientation" can also be simplified in terms of
+                conversation and conformity, Using these two axis of we can create 4 different quadrants of family
+                communication patterns. These 4 quadrants are Protective, Pluralistic, Consensual and Laizze-Faire.
+                Using these quadrants we differentiate the ways that our family will communicate with each other.
+                A representation of these 4 different quadrants are shown below.
             </Typography>
-            <Typography id="testclick" variant="h6" paddingX="2rem" flex paragraph>
-                One of the ways that families communicate is through patterns. Through these patterns it is easy
-                to determine the nature of some of our family relationships. These different types of communication
-                can be divided into 2 different quadrants. These quadrants are "Concept Orientation" and
-                "Socio-Orientation". Using these two different quadrants, we are able to define four different
-                categories that help describe the patterns in which our families communicate.
-            </Typography>
-            <Typography variant="h6" paddingX="2rem" flex paragraph>
-                One of the ways that families communicate is through patterns. Through these patterns it is easy
-                to determine the nature of some of our family relationships. These different types of communication
-                can be divided into 2 different quadrants. These quadrants are "Concept Orientation" and
-                "Socio-Orientation". Using these two different quadrants, we are able to define four different
-                categories that help describe the patterns in which our families communicate.
-            </Typography>
-            <Typography variant="h6" paddingX="2rem" flex paragraph>
-                One of the ways that families communicate is through patterns. Through these patterns it is easy
-                to determine the nature of some of our family relationships. These different types of communication
-                can be divided into 2 different quadrants. These quadrants are "Concept Orientation" and
-                "Socio-Orientation". Using these two different quadrants, we are able to define four different
-                categories that help describe the patterns in which our families communicate.
+            <Card  sx={{paddingX: "2rem", paddingBottom: "3rem"}} style={{ backgroundColor:"inherit", alignItems: "center", boxShadow: "unset"}}>
+                <View>
+                    <Image resizeMode= "contain" source= "https://okptacultivate.files.wordpress.com/2020/01/checkered-school-materials-graphics-global-day-of-parents-card.jpg"
+                           style={{flex: "inherit",  alignSelf: "center", width: "45rem", height: "35rem"}}></Image>
+                </View>
+            </Card>
+            <Typography id="consensual"></Typography>
+            <Card variant="outlined" component={Paper} sx ={{
+                backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
+                <Typography textAlign="center" paddingY="0.5rem" variant="h5">
+                    Pros and Cons of Consensual:
+                </Typography>
+            </Card>
+            <Typography variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
+                Put some text in
             </Typography>
         </Card>
       </Box>
-
-
 
   );
 }
