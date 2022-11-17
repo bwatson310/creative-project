@@ -40,7 +40,7 @@ function App() {
                         margin: "0.2rem",
                         fontSize: "1.5rem",
                     }}/>
-                    <Tab  size= "medium" label="Clickable Link" href="#testId"  clickable sx={{
+                    <Tab  size= "medium" label="Pluralistic" href="#pluralistic"  clickable sx={{
                         color: "black",
                         backgroundColor:"lightgreen",
                         alignContent: "center",
@@ -50,7 +50,7 @@ function App() {
                         margin: "0.2rem",
                         fontSize: "1.5rem",
                     }}/>
-                    <Tab size= "medium" label="Clickable Link" href="#testId" component="a"  clickable sx={{
+                    <Tab size= "medium" label="Protective" href="#protective" component="a"  clickable sx={{
                         color: "black",
                         backgroundColor: "yellowgreen",
                         alignContent: "center",
@@ -58,7 +58,7 @@ function App() {
                         margin: "0.2rem",
                         fontSize: "1.5rem",
                     }}/>
-                    <Tab size= "medium" label="Clickable Link" href="#testId" component="a"  clickable sx={{
+                    <Tab size= "medium" label="Laissez-faire" href="#laissez-faire" component="a"  clickable sx={{
                         color: "black",
                         backgroundColor: "orange",
                         alignContent: "center",
@@ -77,11 +77,11 @@ function App() {
                 </Tabs>
             </Card>
         </AppBar>
-        <Card sx={{backgroundColor: "lightgray", paddingY: "1rem", paddingTop: "8rem"}}>
+        <Card id="introduction" sx={{backgroundColor: "lightgray", paddingY: "1rem", paddingTop: "8rem"}}>
             <Typography textAlign="center" paddingTop="2rem" variant="h2" flex paddingBottom="2rem">
                 Introduction to Family Communication Patterns
             </Typography>
-            <Card id="introduction" variant="outlined" component={Paper} sx ={{
+            <Card variant="outlined" component={Paper} sx ={{
                 backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem"}}>
                 <Typography textAlign="center" paddingY="0.5rem" variant="h4">
                     Introduction:
@@ -127,8 +127,57 @@ function App() {
                     Pros and Cons of Consensual:
                 </Typography>
             </Card>
+            <Typography id="pluralistic" variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
+                Families with a consensual type of communication value open conversation, but also conformity within the
+                family unit. Family members communicate freely about thoughts, feelings and activities, but at the same
+                time, parents are the final decision-makers about important issues. These two somewhat conflicting
+                orientations lead to tensions, caused by a desire to be open but also have control. In these families,
+                parents usually spend a lot of time explaining their decisions, values and beliefs, and their children
+                learn to value conversation and often adopt the family value system. Families of this nature try to
+                avoid conflict, as it threatens the hierarchical structure in which the parents make choices for the
+                family.
+            </Typography>
+            <Card variant="outlined" component={Paper} sx ={{
+                backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
+                <Typography textAlign="center" paddingY="0.5rem" variant="h5">
+                    Pros and Cons of Pluralistic:
+                </Typography>
+            </Card>
+            <Typography id="protective" variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
+                Pluralistic families are oriented toward conversation and away from conformity. Parents in these
+                families believe in the value of "life lessons," and expect their children to develop through their
+                interactions with people outside the family unit. Decisions are made as a family, with everyone having
+                equal input. These families also engage in open conflict resolution. They are not afraid of
+                disagreements, and have developed good strategies to resolve differences. Children from pluralistic
+                families learn to be independent, and have confidence in their ability to make decisions.
+            </Typography>
+            <Card variant="outlined" component={Paper} sx ={{
+                backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
+                <Typography textAlign="center" paddingY="0.5rem" variant="h5">
+                    Pros and Cons of Protective:
+                </Typography>
+            </Card>
+            <Typography id="laissez-faire" variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
+                Protective families do not value open conversation and are oriented toward conformity. In these families,
+                you are likely to hear the parent say, "Because I said so". Children are expected to obey their parents,
+                and parents do not usually share the reasoning for their decisions. Conflict is usually low in these
+                families, because children are oriented toward behaving in accordance with the family norms. However,
+                if conflict does arise, members of these families are ill-equipped to handle the situation. In general,
+                children from these families do not learn to trust their own ability to make decisions.
+            </Typography>
+            <Card variant="outlined" component={Paper} sx ={{
+                backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
+                <Typography textAlign="center" paddingY="0.5rem" variant="h5">
+                    Pros and Cons of Laissez-faire:
+                </Typography>
+            </Card>
             <Typography variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
-                Put some text in
+                Laissez-faire families value neither conversation nor conformity. Family members are often described as
+                "emotionally divorced" from one another. Not much is discussed among members of the family, and parents
+                often don't have an interest or investment in the decisions made by their children. Conflicts tend to be
+                rare in these family situations, as everyone is free to do as they want, however children do not learn
+                the value of conversation, argue Koerner and Fitzpatrick. In addition, because they have little support,
+                they may question their ability to make decisions.
             </Typography>
         </Card>
       </Box>
