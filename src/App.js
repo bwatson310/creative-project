@@ -176,8 +176,8 @@ function App() {
                 "emotionally divorced" from one another. Not much is discussed among members of the family, and parents
                 often don't have an interest or investment in the decisions made by their children. Conflicts tend to be
                 rare in these family situations, as everyone is free to do as they want, however children do not learn
-                the value of conversation, argue Koerner and Fitzpatrick. In addition, because they have little support,
-                they may question their ability to make decisions.
+                the value of conversation. In addition, because they have little support, they may question their
+                ability to make decisions.
             </Typography>
         </Card>
       </Box>
