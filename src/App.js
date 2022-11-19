@@ -142,6 +142,9 @@ function App() {
                         They tend to be more obedient
                     </ListItem>
                     <ListItem>
+                        They tend to be more resilient
+                    </ListItem>
+                    <ListItem>
                         They tend to believe in traditional values
                     </ListItem>
                     <ListItem>
@@ -195,6 +198,9 @@ function App() {
                     </ListItem>
                     <ListItem>
                         They have good conflict management skills
+                    </ListItem>
+                    <ListItem>
+                        They tend to be more resilient
                     </ListItem>
                 </List>
                 Cons
@@ -261,6 +267,9 @@ function App() {
                     <ListItem id="laissez-faire">
                         Highly dependent
                     </ListItem>
+                    <ListItem>
+                        They tend to be less resilient
+                    </ListItem>
                 </List>
             </Typography>
             <Card variant="outlined" component={Paper} sx ={{
@@ -313,6 +322,9 @@ function App() {
                     </ListItem>
                     <ListItem>
                         Lacking in conflict management skills
+                    </ListItem>
+                    <ListItem>
+                        They tend to be less resilient
                     </ListItem>
                 </List>
             </Typography>
