@@ -6,11 +6,11 @@ import {Image, View} from "react-native-web";
 function App() {
   return (
       <Box flex width= "fit-content" flexWrap sx={{scrollBehavior: "inherit"}}>
-        <AppBar position="fixed">
+        <AppBar position="fixed" flex>
             <Card sx={{backgroundColor: "grey", paddingBottom: "1rem", paddingTop: "1rem"}} variant="outlined"
-                  height= "fit-content" width = "fit-content" alignContent="center">
+                  height= "fit-content" width = "fit-content" alignContent="center" flex>
                 <Tabs variant= "fullWidth" sx={{paddingX: "2rem"}}>
-                    <Tab  size= "medium" label="Introduction" href="#introduction"  clickable sx={{
+                    <Tab flex size= "flex" label="Introduction" href="#introduction"  clickable sx={{
                         color: "black",
                         backgroundColor:"lightskyblue",
                         alignContent: "center",
@@ -20,7 +20,7 @@ function App() {
                         margin: "0.2rem",
                         fontSize: "1.5rem",
                     }}/>
-                    <Tab  size= "medium" label="The 2 Axis" href="#The 2 Axis"  clickable sx={{
+                    <Tab flex size= "flex" label="The 2 Axis" href="#The 2 Axis"  clickable sx={{
                         color: "black",
                         backgroundColor:"skyblue",
                         alignContent: "center",
@@ -30,7 +30,7 @@ function App() {
                         margin: "0.2rem",
                         fontSize: "1.5rem",
                     }}/>
-                    <Tab  size= "medium" label="Consensual" href="#consensual"  clickable sx={{
+                    <Tab flex size= "flex" label="Consensual" href="#consensual"  clickable sx={{
                         color: "black",
                         backgroundColor:"lightblue",
                         alignContent: "center",
@@ -40,7 +40,7 @@ function App() {
                         margin: "0.2rem",
                         fontSize: "1.5rem",
                     }}/>
-                    <Tab  size= "medium" label="Pluralistic" href="#pluralistic"  clickable sx={{
+                    <Tab flex size= "flex" label="Pluralistic" href="#pluralistic"  clickable sx={{
                         color: "black",
                         backgroundColor:"lightgreen",
                         alignContent: "center",
@@ -50,7 +50,7 @@ function App() {
                         margin: "0.2rem",
                         fontSize: "1.5rem",
                     }}/>
-                    <Tab size= "medium" label="Protective" href="#protective" component="a"  clickable sx={{
+                    <Tab flex size= "flex" label="Protective" href="#protective" component="a"  clickable sx={{
                         color: "black",
                         backgroundColor: "yellowgreen",
                         alignContent: "center",
@@ -58,7 +58,7 @@ function App() {
                         margin: "0.2rem",
                         fontSize: "1.5rem",
                     }}/>
-                    <Tab size= "medium" label="Laissez-faire" href="#laissez-faire" component="a"  clickable sx={{
+                    <Tab flex size="flex" label="Laissez-faire" href="#laissez-faire" component="a"  clickable sx={{
                         color: "black",
                         backgroundColor: "orange",
                         alignContent: "center",
@@ -114,7 +114,7 @@ function App() {
                 <Typography id= "consensual" paddingBottom= "3rem"></Typography>
             </Card>
             <Card variant="outlined" component={Paper} sx ={{
-                backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
+                backgroundColor: "lightblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
                 <Typography textAlign="center" paddingY="0.5rem" variant="h5">
                     Pros and Cons of Consensual:
                 </Typography>
@@ -167,7 +167,7 @@ function App() {
                 </List>
             </Typography>
             <Card variant="outlined" component={Paper} sx ={{
-                backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
+                backgroundColor:"lightgreen", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
                 <Typography textAlign="center" paddingY="0.5rem" variant="h5">
                     Pros and Cons of Pluralistic:
                 </Typography>
@@ -217,7 +217,7 @@ function App() {
                 </List>
             </Typography>
             <Card variant="outlined" component={Paper} sx ={{
-                backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
+                backgroundColor: "yellowgreen", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
                 <Typography textAlign="center" paddingY="0.5rem" variant="h5">
                     Pros and Cons of Protective:
                 </Typography>
@@ -264,7 +264,7 @@ function App() {
                 </List>
             </Typography>
             <Card variant="outlined" component={Paper} sx ={{
-                backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
+                backgroundColor: "orange", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
                 <Typography textAlign="center" paddingY="0.5rem" variant="h5">
                     Pros and Cons of Laissez-faire:
                 </Typography>
