@@ -1,5 +1,5 @@
 import './App.css';
-import {AppBar, Box, Card, Paper, Tab, Tabs, Typography} from "@mui/material";
+import {AppBar, Box, Card, List, ListItem, Paper, Tab, Tabs, Typography} from "@mui/material";
 import "./communication-styles-quadrant.png";
 import {Image, View} from "react-native-web";
 
@@ -10,7 +10,7 @@ function App() {
             <Card sx={{backgroundColor: "grey", paddingBottom: "1rem", paddingTop: "1rem"}} variant="outlined"
                   height= "fit-content" width = "fit-content" alignContent="center">
                 <Tabs variant= "fullWidth" sx={{paddingX: "2rem"}}>
-                    <Tab  size= "medium" label="Introduction" href="introduction"  clickable sx={{
+                    <Tab  size= "medium" label="Introduction" href="#introduction"  clickable sx={{
                         color: "black",
                         backgroundColor:"lightskyblue",
                         alignContent: "center",
@@ -66,18 +66,10 @@ function App() {
                         margin: "0.2rem",
                         fontSize: "1.5rem",
                     }}/>
-                    <Tab size= "medium" label="Clickable Link" href="#testId" component="a" clickable sx={{
-                        color: "black",
-                        backgroundColor: "orangered",
-                        alignContent: "center",
-                        paddingX: "0.2rem",
-                        margin: "0.2rem",
-                        fontSize: "1.5rem",
-                    }}/>
                 </Tabs>
             </Card>
         </AppBar>
-        <Card id="introduction" sx={{backgroundColor: "lightgray", paddingY: "1rem", paddingTop: "8rem"}}>
+        <Card id="introduction" sx={{backgroundColor: "lightgray", paddingY: "1rem", paddingTop: "6.5rem"}}>
             <Typography textAlign="center" paddingTop="2rem" variant="h2" flex paddingBottom="2rem">
                 Introduction to Family Communication Patterns
             </Typography>
@@ -114,20 +106,20 @@ function App() {
                 Using these quadrants we differentiate the ways that our family will communicate with each other.
                 A representation of these 4 different quadrants are shown below.
             </Typography>
-            <Card  sx={{paddingX: "2rem", paddingBottom: "3rem"}} style={{ backgroundColor:"inherit", alignItems: "center", boxShadow: "unset"}}>
+            <Card sx={{paddingX: "2rem", paddingBottom: "3rem"}} style={{ backgroundColor:"inherit", alignItems: "center", boxShadow: "unset"}}>
                 <View>
                     <Image resizeMode= "contain" source= "https://okptacultivate.files.wordpress.com/2020/01/checkered-school-materials-graphics-global-day-of-parents-card.jpg"
                            style={{flex: "inherit",  alignSelf: "center", width: "45rem", height: "35rem"}}></Image>
                 </View>
+                <Typography id= "consensual" paddingBottom= "3rem"></Typography>
             </Card>
-            <Typography id="consensual"></Typography>
             <Card variant="outlined" component={Paper} sx ={{
                 backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
                 <Typography textAlign="center" paddingY="0.5rem" variant="h5">
                     Pros and Cons of Consensual:
                 </Typography>
             </Card>
-            <Typography id="pluralistic" variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
+            <Typography variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
                 Families with a consensual type of communication value open conversation, but also conformity within the
                 family unit. Family members communicate freely about thoughts, feelings and activities, but at the same
                 time, parents are the final decision-makers about important issues. These two somewhat conflicting
@@ -135,7 +127,44 @@ function App() {
                 parents usually spend a lot of time explaining their decisions, values and beliefs, and their children
                 learn to value conversation and often adopt the family value system. Families of this nature try to
                 avoid conflict, as it threatens the hierarchical structure in which the parents make choices for the
-                family.
+                family. A summary of the pros and cons for children that are raised this pattern are shown below.
+            </Typography>
+            <Typography variant="h4" paddingX="2rem" flex paragraph>
+                Pros
+                <List sx={{fontSize: "1.25rem", listStyleType: "disc", pl: 2,
+                    '& .MuiListItem-root': {
+                        display: 'list-item',
+                    },}}>
+                    <ListItem>
+                        They tend to have warmer sibling relationships
+                    </ListItem>
+                    <ListItem>
+                        They tend to be more obedient
+                    </ListItem>
+                    <ListItem>
+                        They tend to believe in traditional values
+                    </ListItem>
+                    <ListItem>
+                        They have decent conflict management skills
+                    </ListItem>
+                </List>
+            </Typography>
+            <Typography variant="h4" paddingX="2rem" flex paragraph>
+                Cons
+                <List sx={{fontSize: "1.25rem", listStyleType: "disc", pl: 2,
+                    '& .MuiListItem-root': {
+                        display: 'list-item',
+                    },}}>
+                    <ListItem>
+                        They avoid conflict
+                    </ListItem>
+                    <ListItem id="pluralistic">
+                        They are less independent
+                    </ListItem>
+                    <ListItem>
+                        They aren't as assertive
+                    </ListItem>
+                </List>
             </Typography>
             <Card variant="outlined" component={Paper} sx ={{
                 backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
@@ -143,13 +172,49 @@ function App() {
                     Pros and Cons of Pluralistic:
                 </Typography>
             </Card>
-            <Typography id="protective" variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
+            <Typography variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
                 Pluralistic families are oriented toward conversation and away from conformity. Parents in these
                 families believe in the value of "life lessons," and expect their children to develop through their
                 interactions with people outside the family unit. Decisions are made as a family, with everyone having
                 equal input. These families also engage in open conflict resolution. They are not afraid of
                 disagreements, and have developed good strategies to resolve differences. Children from pluralistic
-                families learn to be independent, and have confidence in their ability to make decisions.
+                families learn to be independent, and have confidence in their ability to make decisions. A summary of
+                the pros and cons for children that are raised this pattern are shown below.
+            </Typography>
+            <Typography variant="h4" paddingX="2rem" flex paragraph>
+                Pros
+                <List sx={{fontSize: "1.25rem", listStyleType: "disc", pl: 2,
+                    '& .MuiListItem-root': {
+                        display: 'list-item',
+                    },}}>
+                    <ListItem>
+                        They are highly assertive
+                    </ListItem>
+                    <ListItem>
+                        They are independant
+                    </ListItem>
+                    <ListItem>
+                        They have good conflict management skills
+                    </ListItem>
+                </List>
+                Cons
+                <List sx={{fontSize: "1.25rem", listStyleType: "disc", pl: 2,
+                    '& .MuiListItem-root': {
+                        display: 'list-item',
+                    },}}>
+                    <ListItem>
+                        Low sibling warmth
+                    </ListItem>
+                    <ListItem>
+                        Tend to stray from traditional values
+                    </ListItem>
+                    <ListItem id= "protective">
+                        Often have a lack of obedience
+                    </ListItem>
+                    <ListItem>
+                        Question authority
+                    </ListItem>
+                </List>
             </Typography>
             <Card variant="outlined" component={Paper} sx ={{
                 backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
@@ -157,13 +222,46 @@ function App() {
                     Pros and Cons of Protective:
                 </Typography>
             </Card>
-            <Typography id="laissez-faire" variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
+            <Typography variant="h6" paddingX="2rem" flex paragraph paddingTop="1.5rem">
                 Protective families do not value open conversation and are oriented toward conformity. In these families,
                 you are likely to hear the parent say, "Because I said so". Children are expected to obey their parents,
                 and parents do not usually share the reasoning for their decisions. Conflict is usually low in these
                 families, because children are oriented toward behaving in accordance with the family norms. However,
                 if conflict does arise, members of these families are ill-equipped to handle the situation. In general,
-                children from these families do not learn to trust their own ability to make decisions.
+                children from these families do not learn to trust their own ability to make decisions. A summary of the
+                pros and cons for children that are raised this pattern are shown below.
+            </Typography>
+            <Typography variant="h4" paddingX="2rem" flex paragraph>
+                Pros
+                <List sx={{fontSize: "1.25rem", listStyleType: "disc", pl: 2,
+                    '& .MuiListItem-root': {
+                        display: 'list-item',
+                    },}}>
+                    <ListItem>
+                        Highly obedient
+                    </ListItem>
+                    <ListItem>
+                        High sibling warmth
+                    </ListItem>
+                    <ListItem>
+                        Tend to keep traditional values
+                    </ListItem>
+                </List>
+                Cons
+                <List sx={{fontSize: "1.25rem", listStyleType: "disc", pl: 2,
+                    '& .MuiListItem-root': {
+                        display: 'list-item',
+                    },}}>
+                    <ListItem>
+                        High conflict avoidance
+                    </ListItem>
+                    <ListItem>
+                        Lacking in conflict management
+                    </ListItem>
+                    <ListItem id="laissez-faire">
+                        Highly dependent
+                    </ListItem>
+                </List>
             </Typography>
             <Card variant="outlined" component={Paper} sx ={{
                 backgroundColor: "lightskyblue", paddingX: "2rem", width: "25rem", marginLeft: "1rem", paddingY: "1rem"}}>
@@ -177,7 +275,46 @@ function App() {
                 often don't have an interest or investment in the decisions made by their children. Conflicts tend to be
                 rare in these family situations, as everyone is free to do as they want, however children do not learn
                 the value of conversation. In addition, because they have little support, they may question their
-                ability to make decisions.
+                ability to make decisions. A summary of the pros and cons for children that are raised this pattern are
+                shown below.
+            </Typography>
+            <Typography id="pluralistic" variant="h4" paddingX="2rem" flex paragraph>
+                Pros
+                <List sx={{fontSize: "1.25rem", listStyleType: "disc", pl: 2,
+                    '& .MuiListItem-root': {
+                        display: 'list-item',
+                    },}}>
+                    <ListItem>
+                        Highly independent
+                    </ListItem>
+                    <ListItem>
+                        Low conflict
+                    </ListItem>
+                    <ListItem>
+                        Original ideas
+                    </ListItem>
+                </List>
+                Cons
+                <List sx={{fontSize: "1.25rem", listStyleType: "disc", pl: 2,
+                    '& .MuiListItem-root': {
+                        display: 'list-item',
+                    },}}>
+                    <ListItem>
+                        Indecisive
+                    </ListItem>
+                    <ListItem>
+                        Low sibling warmth
+                    </ListItem>
+                    <ListItem>
+                        Feel no support
+                    </ListItem>
+                    <ListItem>
+                        High conflict avoidance
+                    </ListItem>
+                    <ListItem>
+                        Lacking in conflict management skills
+                    </ListItem>
+                </List>
             </Typography>
         </Card>
       </Box>
